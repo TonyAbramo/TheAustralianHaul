@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import LoginPanel from './components/LoginPanel';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
     <div className="App">
-      <LoginPanel />
+      <Homepage />
     </div>
   );
 }
