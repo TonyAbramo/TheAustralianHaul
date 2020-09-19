@@ -19,7 +19,8 @@ export default function Homepage() {
     <div style={container}>
       TODO: <br></br>
       - split container en 2<br></br>
-      - upper side of the container
+      - upper side of the container<br></br>
+      - clean up files hierarchy
 
     </div>
   )
