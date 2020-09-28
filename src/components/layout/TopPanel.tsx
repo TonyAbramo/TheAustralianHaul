@@ -9,9 +9,11 @@ interface TopPanelProps {
 export default function TopPanel(props: TopPanelProps) {
 
     const topPanelStyle: React.CSSProperties = {
-        backgroundColor: "lavender",
+        backgroundColor: "#AAD7E6",
         height: "50%",
-        maxHeight: "50%"
+        maxHeight: "50%",
+        width: "100%",
+        position: "absolute"
 
     }
 
