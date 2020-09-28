@@ -1,4 +1,6 @@
 import * as React from 'react';
+import BottomPanel from './BottomPanel';
+import TopPanel from './TopPanel';
 
 export default function Homepage() {
 
@@ -17,10 +19,8 @@ export default function Homepage() {
 
   return (
     <div style={container}>
-      TODO: <br></br>
-      - split container en 2<br></br>
-      - upper side of the container<br></br>
-      - clean up files hierarchy
+      <TopPanel />
+      <BottomPanel />
 
     </div>
   )
