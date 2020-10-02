@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import AustralianHaulLogo from '../../assets/AH_logo.png'
+import australianHaulLogo from '../../assets/AH_logo.png'
+import shoppingCartIcon from '../../assets/shopping-bag-white.png'
 
 interface NavbarProps {
     height?: React.CSSProperties
@@ -9,40 +10,57 @@ interface NavbarProps {
 
 export default function Navbar(props: NavbarProps) {
 
+    // CSS Styles
     const navbarStyle: React.CSSProperties = {
         backgroundColor: "#C0E1EE",
-        marginTop: 10,
+        marginTop: 20,
         display: "flex",
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "center",
+        height: `${props.height}`,
+        padding: "0 20px"
     }
-
     const logoStyle: React.CSSProperties = {
         display: "flex",
-        marginLeft: 10
     }
-
+    const iconStyle: React.CSSProperties = {
+        marginLeft: 50,
+        marginRight: 70
+    }
     const menuStyle: React.CSSProperties = {
         flexGrow: 1,
         display: "flex",
-        flexDirection: "row-reverse",
-        color: "#F7FFFE"
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        color: "#F7FFFE",
+        fontSize: 18,
+    }
+    const spaceBetweenStyle: React.CSSProperties = {
+        marginLeft: 30
     }
 
     return (
         <div style={navbarStyle} >
             <img
-                src={AustralianHaulLogo}
-                alt="AustralianHaul logo"
+                src={australianHaulLogo}
+                alt="Australian Haul logo"
                 style={logoStyle}
                 width={200}
                 height={50}
             />
             <div style={menuStyle}>
-                <div style={{ margin: "0px 10px" }} >icon</div>
-                <div>menu</div>
+                <div style={spaceBetweenStyle} >Home</div>
+                <div style={spaceBetweenStyle} >Shop</div>
+                <div style={spaceBetweenStyle} >Products</div>
+                <div style={spaceBetweenStyle} >Contact</div>
             </div>
-
+            <img
+                src={shoppingCartIcon}
+                alt="shopping cart icon"
+                style={iconStyle}
+                width={23}
+                height="auto"
+            />
         </div>
     )
 }

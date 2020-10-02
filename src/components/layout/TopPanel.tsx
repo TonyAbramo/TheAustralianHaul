@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Carousel from '../carousel/Carousel';
 import Navbar from '../menu/Navbar'
 
 interface TopPanelProps {
@@ -20,6 +21,7 @@ export default function TopPanel(props: TopPanelProps) {
     return (
         <div style={topPanelStyle} >
             <Navbar />
+            <Carousel />
         </div>
     )
 }
