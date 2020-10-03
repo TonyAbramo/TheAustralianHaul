@@ -1,5 +1,6 @@
 import * as React from 'react';
 import TopPanel from './TopPanel';
+import BottomPanel from './BottomPanel';
 
 export default function Homepage() {
 
@@ -19,6 +20,7 @@ export default function Homepage() {
   return (
     <div style={container}>
       <TopPanel />
+      <BottomPanel />
     </div>
   )
 }
