@@ -18,7 +18,7 @@ export default function Carousel(props: CarouselProps) {
     const centeredTextStyle: React.CSSProperties = {
         color: "#F7FFFE",
         textAlign: "center",
-        fontSize: 22,
+        fontSize: 20,
         marginTop: 90
     }
 
