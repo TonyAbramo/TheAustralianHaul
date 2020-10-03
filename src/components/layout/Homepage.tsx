@@ -1,4 +1,5 @@
 import * as React from 'react';
+import TopPanel from './TopPanel';
 
 export default function Homepage() {
 
@@ -7,7 +8,7 @@ export default function Homepage() {
     left: 0,
     right: 0,
     bottom: 0,
-    height: 700,
+    height: '90%',
     width: "70%",
     backgroundColor: "#eeeeee",
     margin: "auto",
@@ -17,11 +18,7 @@ export default function Homepage() {
 
   return (
     <div style={container}>
-      TODO: <br></br>
-      - split container en 2<br></br>
-      - upper side of the container<br></br>
-      - clean up files hierarchy
-
+      <TopPanel />
     </div>
   )
 }
