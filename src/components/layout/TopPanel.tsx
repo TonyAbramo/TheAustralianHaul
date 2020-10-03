@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Carousel from '../carousel/Carousel';
 import NavBar from '../menu/NavBar';
 
 export default function TopPanel() {
@@ -14,6 +15,7 @@ export default function TopPanel() {
     return (
         <div style={topPanelStyle} >
             <NavBar />
+            <Carousel />
         </div>
     )
 }
