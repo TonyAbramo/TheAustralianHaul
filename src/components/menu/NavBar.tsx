@@ -14,7 +14,7 @@ export default function NavBar() {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        padding: "0 20px",
+        padding: "10px 20px",
         marginTop: 20
     }
     const iconStyle: React.CSSProperties = {
@@ -26,8 +26,8 @@ export default function NavBar() {
             <img
                 src={australianHaulLogo}
                 alt="logo"
-                width={200}
-                height={50}
+                width='auto'
+                height={30}
             />
             <Menu />
             <img
