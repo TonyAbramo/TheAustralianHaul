@@ -8,9 +8,7 @@ export default function Grid() {
 
     const gridStyle: React.CSSProperties = {
         display: 'flex',
-        flexWrap: 'nowrap',
         justifyContent: 'space-evenly',
-
     }
 
     return (

@@ -8,10 +8,8 @@ export default function Gridbox() {
     const gridboxStyle: React.CSSProperties = {
         width: '200px',
         height: '300px',
-        border: '1px solid black',
         textAlign: 'center',
-        margin: '0px auto'
-
+        backgroundColor: '#fff',
     }
 
     return (
