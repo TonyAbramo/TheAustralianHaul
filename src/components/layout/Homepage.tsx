@@ -10,7 +10,7 @@ export default function Homepage() {
     right: 0,
     bottom: 0,
     height: 750,
-    width: "70%",
+    width: "80%",
     backgroundColor: "#eeeeee",
     margin: "auto",
     position: "absolute",
