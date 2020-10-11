@@ -42,8 +42,8 @@ export default function Navbar(props: NavbarProps) {
                 src={australianHaulLogo}
                 alt="Australian Haul logo"
                 style={logoStyle}
-                width={200}
-                height={50}
+                width={"auto"}
+                height={35}
             />
             <div style={menuStyle}>
                 <ButtonMUI label="Home" />
