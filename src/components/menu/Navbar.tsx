@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import australianHaulLogo from '../../assets/AH_logo.png'
 import shoppingCartIcon from '../../assets/shopping-bag-white.png'
-import ButtonMUI from '../utils/Button';
+import ButtonMUI from '../utils/ButtonMUI';
 
 interface NavbarProps {
     height?: React.CSSProperties
