@@ -2,10 +2,10 @@ import * as React from 'react';
 
 import australianHaulLogo from '../../assets/AH_logo.png'
 import shoppingCartIcon from '../../assets/shopping-bag-white.png'
+import ButtonMUI from '../utils/Button';
 
 interface NavbarProps {
     height?: React.CSSProperties
-
 }
 
 export default function Navbar(props: NavbarProps) {
@@ -32,12 +32,9 @@ export default function Navbar(props: NavbarProps) {
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-end",
-        color: "#F7FFFE",
         fontSize: 18,
     }
-    const spaceBetweenStyle: React.CSSProperties = {
-        marginLeft: 30
-    }
+
 
     return (
         <div style={navbarStyle} >
@@ -49,10 +46,10 @@ export default function Navbar(props: NavbarProps) {
                 height={50}
             />
             <div style={menuStyle}>
-                <div style={spaceBetweenStyle} >Home</div>
-                <div style={spaceBetweenStyle} >Shop</div>
-                <div style={spaceBetweenStyle} >Products</div>
-                <div style={spaceBetweenStyle} >Contact</div>
+                <ButtonMUI label="Home" />
+                <ButtonMUI label="Shop" />
+                <ButtonMUI label="Products" />
+                <ButtonMUI label="Contact" />
             </div>
             <img
                 src={shoppingCartIcon}
