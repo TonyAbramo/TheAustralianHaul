@@ -16,20 +16,15 @@ export default function BottomPanel(props: BottomPanelProps) {
     padding: "10px 0px"
   }
 
-  const titlePadding: React.CSSProperties = {
-    padding: '20px'
+  const titleStyle: React.CSSProperties = {
+    padding: '20px',
+    fontWeight: 'bold'
   }
 
   return (
     <div style={BottomPanelStyle} >
-      <p style={titlePadding}>New Products</p>
+      <p style={titleStyle}>New Products</p>
       <Grid />
-      <div>TODO :
-        Handle images, titles and prices with backend ??
-        change images to png
-        
-
-      </div >
     </div >
   )
 }
