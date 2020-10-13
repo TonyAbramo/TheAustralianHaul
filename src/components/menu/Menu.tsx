@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Button from '@material-ui/core/Button';
 
 export default function Menu() {
 
@@ -10,16 +11,17 @@ export default function Menu() {
         color: "#F7FFFE",
         fontSize: 18,
     }
-    const spaceBetweenStyle: React.CSSProperties = {
+    const buttonStyle: React.CSSProperties = {
         marginLeft: 30,
+        color: '#fff'
     }
 
     return (
         <div style={menuStyle} >
-            <div style={spaceBetweenStyle} >Home</div>
-            <div style={spaceBetweenStyle} >Shop</div>
-            <div style={spaceBetweenStyle} >Products</div>
-            <div style={spaceBetweenStyle} >Contact</div>
+            <Button style={buttonStyle} >Home</Button>
+            <Button style={buttonStyle} >Shop</Button>
+            <Button style={buttonStyle} >Products</Button>
+            <Button style={buttonStyle} >Contact</Button>
         </div>
     )
 }

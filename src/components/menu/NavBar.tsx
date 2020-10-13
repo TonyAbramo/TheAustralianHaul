@@ -1,9 +1,11 @@
 import * as React from 'react';
+import IconButton from '@material-ui/core/IconButton';
 
 import Menu from './Menu';
 
 import australianHaulLogo from '../../assets/AH_logo.png';
 import shoppingCartIcon from '../../assets/shopping-bag-white.png';
+
 
 
 
@@ -30,13 +32,14 @@ export default function NavBar() {
                 height='auto'
             />
             <Menu />
-            <img
-                src={shoppingCartIcon}
-                alt="shopping cart icon"
-                style={iconStyle}
-                width={23}
-                height="auto"
-            />
+            <IconButton style={iconStyle}>
+                <img
+                    src={shoppingCartIcon}
+                    alt="shopping cart icon"
+                    width={23}
+                    height="auto"
+                />
+            </IconButton>
         </div>
     )
 }
