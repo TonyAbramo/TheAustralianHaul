@@ -11,7 +11,7 @@ export default function Homepage() {
     bottom: 0,
     height: '90%',
     width: "70%",
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#FEFFFF",
     margin: "auto",
     position: "absolute",
     zIndex: 10

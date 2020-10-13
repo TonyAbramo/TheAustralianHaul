@@ -11,13 +11,13 @@ export default function Grid() {
         justifyContent: 'space-evenly',
     }
 
+    const products: string[] = ['productA', 'productB', 'productC', 'productD', 'productE'];
+
     return (
         <div style={gridStyle}>
-            <Gridbox />
-            <Gridbox />
-            <Gridbox />
-            <Gridbox />
-            <Gridbox />
+            {
+                products.map(product => <Gridbox itemname={product} />)
+            }
         </div>
     )
 }
