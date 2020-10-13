@@ -20,7 +20,8 @@ export default function NavBar() {
         marginTop: 20
     }
     const iconStyle: React.CSSProperties = {
-        marginLeft: 50
+        marginLeft: 50,
+        color: "#fff",
     }
 
     return (
